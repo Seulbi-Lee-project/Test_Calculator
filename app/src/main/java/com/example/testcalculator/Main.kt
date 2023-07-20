@@ -12,7 +12,6 @@ fun main() {
 
     cal.operation(num1.toInt(), num2.toInt(), operator)
 
-
 }
 
 class Calculator {
@@ -22,7 +21,8 @@ class Calculator {
             "+" -> println("${num1} ${operator} ${num2}는 ${num1 + num2}입니다.")
             "-" -> println("${num1} ${operator} ${num2}는 ${num1 - num2}입니다.")
             "*" -> println("${num1} ${operator} ${num2}는 ${num1 * num2}입니다.")
-            "/" -> println("${num1} ${operator} ${num2}는 ${num1 / num2}입니다.")
+            "/" -> println("${num1} ${operator} ${num2}는 ${num1.toFloat() / num2.toFloat()}입니다.")
+            "%" -> println("${num1} ${operator} ${num2}의 나머지는 ${num1 % num2}입니다.")
             else -> println("잘못된 계산식입니다.")
         }
     }
