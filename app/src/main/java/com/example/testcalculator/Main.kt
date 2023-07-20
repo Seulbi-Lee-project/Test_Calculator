@@ -7,13 +7,14 @@ fun main() {
     var operator = readLine()!!
     println("숫자를 입력해 주세요.")
     var num2 = readLine()!!
-        when(operator) {
-            "+" -> println("${num1 + operator + num2}는 ${Calculator(AddOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
-            "-" -> println("${num1 + operator + num2}는 ${Calculator(SubtractOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
-            "*" -> println("${num1 + operator + num2}는 ${Calculator(MultiplyOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
-            "/" -> println("${num1 + operator + num2}는 ${Calculator(DivideOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
-            "%" -> println("${num1 + operator + num2}의 나머지는 ${num1.toInt() % num2.toInt()}입니다.")
-            else -> println("잘못된 계산식입니다.")
-        }
+
+    when(operator) {
+        "+" -> println("${num1 + operator + num2}는 ${Calculator(AddOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
+        "-" -> println("${num1 + operator + num2}는 ${Calculator(SubtractOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
+        "*" -> println("${num1 + operator + num2}는 ${Calculator(MultiplyOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
+        "/" -> println("${num1 + operator + num2}는 ${Calculator(DivideOperation()).operate(num1.toInt(), num2.toInt())}입니다.")
+        "%" -> println("${num1 + operator + num2}의 나머지는 ${num1.toInt() % num2.toInt()}입니다.")
+        else -> println("잘못된 계산식입니다.")
+    }
 }
 
